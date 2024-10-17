@@ -42,7 +42,7 @@ public:
 
                 // 假设我们想要将 DropIndicator 绘制在行分隔符上，可以调整 rect 的高度
                 painter->save();
-                QColor c = qApp->palette().color(QPalette::Highlight);
+                QColor c = qApp->palette().color(QPalette::Shadow);
                 painter->setPen(QPen(c, 3)); // 设置颜色为红色（仅作为示例）
                 painter->drawLine(rect.topLeft(), rect.topRight());
                 painter->restore();
